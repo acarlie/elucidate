@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href='https://acarlie.github.io/elucidate/'",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "deploy": "ng deploy --no-silent --base-href=https://acarlie.com/elucidate/",
     "e2e": "ng e2e"
   },
   "private": true,
