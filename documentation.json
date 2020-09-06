@@ -434,7 +434,7 @@
                 "subtype": "variable",
                 "file": "src/jest-config/globalMocks.ts",
                 "type": "",
-                "defaultValue": "() => {\r\n    let storage = {};\r\n    return {\r\n      getItem: key => (key in storage ? storage[key] : null),\r\n      setItem: (key, value) => (storage[key] = value || ''),\r\n      removeItem: key => delete storage[key],\r\n      clear: () => (storage = {}),\r\n    };\r\n  }"
+                "defaultValue": "() => {\n    let storage = {};\n    return {\n      getItem: key => (key in storage ? storage[key] : null),\n      setItem: (key, value) => (storage[key] = value || ''),\n      removeItem: key => delete storage[key],\n      clear: () => (storage = {}),\n    };\n  }"
             },
             {
                 "name": "Primary",
@@ -634,7 +634,7 @@
                     "subtype": "variable",
                     "file": "src/jest-config/globalMocks.ts",
                     "type": "",
-                    "defaultValue": "() => {\r\n    let storage = {};\r\n    return {\r\n      getItem: key => (key in storage ? storage[key] : null),\r\n      setItem: (key, value) => (storage[key] = value || ''),\r\n      removeItem: key => delete storage[key],\r\n      clear: () => (storage = {}),\r\n    };\r\n  }"
+                    "defaultValue": "() => {\n    let storage = {};\n    return {\n      getItem: key => (key in storage ? storage[key] : null),\n      setItem: (key, value) => (storage[key] = value || ''),\n      removeItem: key => delete storage[key],\n      clear: () => (storage = {}),\n    };\n  }"
                 }
             ]
         },

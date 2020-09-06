@@ -8,11 +8,11 @@
     "build-all": "npm run build && npm run build-storybook",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy": "npm run build-all && npm run ng deploy --no-build --no-silent --base-href=https://acarlie.com/elucidate/",
+    "deploy": "npm run build-all && ng deploy --no-silent --no-build=true",
     "e2e": "ng e2e",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
-    "build-storybook": "npm run docs:json && build-storybook -c .storybook -o dist/storybook",
+    "build-storybook": "npm run docs:json && build-storybook -c .storybook -o dist/elucidate/storybook",
     "jest": "jest --watch"
   },
   "private": true,
