@@ -1,33 +1,44 @@
-@import './functions/functions';
+@import './utility/functions/functions';
 
 // g denotes global, c should be used in components
 $g-px-base: 16px;
 
+
+// Media queries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$g-screen-mobile-only: 567.98px;
+$g-screen-mobile-landscape-up: 568px;
+$g-screen-tablet-portrait-up: 768px;
+$g-screen-tablet-landscape-up: 992px;
+$g-screen-desktop-up: 1200px;
+$g-screen-large-desktop-up: 1800px;
+
+
 // Typography ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // Text
-$g-text-size-large: calculate-rem(16px);
-$g-text-size-large-desktop: calculate-rem(18px);
-$g-text-size-default: calculate-rem(14px);
-$g-text-size-default-desktop: $g-px-base;
-$g-text-size-small: calculate-rem(12px);
-$g-text-size-small-desktop: calculate-rem(14px);
+$g-text-size-large-mobile: calculate-rem(16px);
+$g-text-size-large: calculate-rem(18px);
+$g-text-size-default-mobile: calculate-rem(14px);
+$g-text-size-default: $g-px-base;
+$g-text-size-small-mobile: calculate-rem(12px);
+$g-text-size-small: calculate-rem(14px);
 $g-text-size-extra-small: calculate-rem(12px);
 
 
 // Headings
-$g-heading-size-1: calculate-rem(36px);
-$g-heading-size-1-desktop: calculate-rem(40px);
-$g-heading-size-2: calculate-rem(28px);
-$g-heading-size-2-desktop: calculate-rem(32px);
-$g-heading-size-3: calculate-rem(24px);
-$g-heading-size-3-desktop: calculate-rem(28px);
-$g-heading-size-4: calculate-rem(20px);
-$g-heading-size-4-desktop: calculate-rem(22px);
+$g-heading-size-1-mobile: calculate-rem(36px);
+$g-heading-size-1: calculate-rem(40px);
+$g-heading-size-2-mobile: calculate-rem(28px);
+$g-heading-size-2: calculate-rem(32px);
+$g-heading-size-3-mobile: calculate-rem(24px);
+$g-heading-size-3: calculate-rem(28px);
+$g-heading-size-4-mobile: calculate-rem(20px);
+$g-heading-size-4: calculate-rem(22px);
+$g-heading-size-5-mobile: $g-text-size-large-mobile;
 $g-heading-size-5: $g-text-size-large;
-$g-heading-size-5-desktop: $g-text-size-large-desktop;
+$g-heading-size-6-mobile: $g-text-size-default-mobile;
 $g-heading-size-6: $g-text-size-default;
-$g-heading-size-6-desktop: $g-text-size-default-desktop;
 
 // Colors ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

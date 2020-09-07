@@ -1,0 +1,44 @@
+@import './../../variables';
+
+@mixin for-screen($breakpoint) {
+    @if $breakpoint==mobile-only {
+        @media (max-width: $g-screen-mobile-only) {
+            @content;
+        }
+    }
+
+    // iPhone SE
+    @else if $breakpoint==mobile-landscape-up {
+        @media (min-width: $g-screen-mobile-landscape-up) {
+            @content;
+        }
+    }
+
+    // iPad Air, iPad Mini, iPad Pro 9″
+    @else if $breakpoint==tablet-portrait-up {
+        @media (min-width: $g-screen-tablet-portrait-up) {
+            @content;
+        }
+    }
+
+    // 1024: iPad Air, iPad Mini, iPad Pro 9″
+    @else if $breakpoint==tablet-landscape-up {
+        @media (min-width: $g-screen-tablet-landscape-up) {
+            @content;
+        }
+    }
+
+    // Laptops
+    @else if $breakpoint==desktop-up {
+        @media (min-width: $g-screen-desktop-up) {
+            @content;
+        }
+    }
+
+    // Large screens
+    @else if $breakpoint==large-desktop-up {
+        @media (min-width: $g-screen-large-desktop-up) {
+            @content;
+        }
+    }
+}
