@@ -5,10 +5,10 @@
     "classes": [
         {
             "name": "AppPage",
-            "id": "class-AppPage-a0db91bfa3b9914e9048612074084ee6",
+            "id": "class-AppPage-f4b1a61b6d3ff336360a5431d58b3935",
             "file": "e2e/src/app.po.ts",
             "type": "class",
-            "sourceCode": "import { browser, by, element } from 'protractor';\n\nexport class AppPage {\n  navigateTo(): Promise<unknown> {\n    return browser.get(browser.baseUrl) as Promise<unknown>;\n  }\n\n  getTitleText(): Promise<string> {\n    return element(by.css('app-root .content span')).getText() as Promise<string>;\n  }\n}\n",
+            "sourceCode": "import { browser, by, element } from 'protractor';\n\nexport class AppPage {\n  public navigateTo(): Promise<unknown> {\n    return browser.get(browser.baseUrl) as Promise<unknown>;\n  }\n\n  public getTitleText(): Promise<string> {\n    return element(by.css('app-root .content span')).getText() as Promise<string>;\n  }\n}\n",
             "properties": [],
             "methods": [
                 {
@@ -17,7 +17,10 @@
                     "optional": false,
                     "returnType": "Promise<string>",
                     "typeParameters": [],
-                    "line": 8
+                    "line": 8,
+                    "modifierKind": [
+                        114
+                    ]
                 },
                 {
                     "name": "navigateTo",
@@ -25,7 +28,10 @@
                     "optional": false,
                     "returnType": "Promise<unknown>",
                     "typeParameters": [],
-                    "line": 4
+                    "line": 4,
+                    "modifierKind": [
+                        114
+                    ]
                 }
             ],
             "indexSignatures": [],
@@ -39,7 +45,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-88e8ffb7a9e3891dc257148031177f34",
+            "id": "component-AppComponent-dd666d821a7352897bc8710afbb88ee7",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -64,7 +70,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 9,
+                    "line": 10,
                     "modifierKind": [
                         114
                     ]
@@ -76,7 +82,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  public title = 'elucidate';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\n\nexport class AppComponent {\n  public title = 'elucidate';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -379,17 +385,17 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
+                "file": "src/environments/environment.prod.ts",
                 "type": "object",
-                "defaultValue": "{\n  production: false\n}"
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
+                "file": "src/environments/environment.ts",
                 "type": "object",
-                "defaultValue": "{\n  production: true\n}"
+                "defaultValue": "{\n  production: false\n}"
             },
             {
                 "name": "Large",
@@ -516,16 +522,6 @@
                     "type": "literal type"
                 }
             ],
-            "src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.ts",
-                    "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -534,6 +530,16 @@
                     "file": "src/environments/environment.prod.ts",
                     "type": "object",
                     "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
