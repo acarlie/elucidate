@@ -2,8 +2,9 @@
     "extends": [
         "stylelint-config-standard",
         "stylelint-config-sass-guidelines",
-        "stylelint-config-prettier",
-        "stylelint-config-hudochenkov"
+        "stylelint-config-prettier"
     ],
-    "plugins": []
+    "plugins": [
+        "stylelint-order"
+    ]
 }
