@@ -1,0 +1,75 @@
+@import './functions/functions';
+
+// g denotes global, c should be used in components
+$g-px-base: 16px;
+
+// Typography ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Text
+$g-text-size-large: calculate-rem(16px);
+$g-text-size-large-desktop: calculate-rem(18px);
+$g-text-size-default: calculate-rem(14px);
+$g-text-size-default-desktop: $g-px-base;
+$g-text-size-small: calculate-rem(12px);
+$g-text-size-small-desktop: calculate-rem(14px);
+$g-text-size-extra-small: calculate-rem(12px);
+
+
+// Headings
+$g-heading-size-1: calculate-rem(36px);
+$g-heading-size-1-desktop: calculate-rem(40px);
+$g-heading-size-2: calculate-rem(28px);
+$g-heading-size-2-desktop: calculate-rem(32px);
+$g-heading-size-3: calculate-rem(24px);
+$g-heading-size-3-desktop: calculate-rem(28px);
+$g-heading-size-4: calculate-rem(20px);
+$g-heading-size-4-desktop: calculate-rem(22px);
+$g-heading-size-5: $g-text-size-large;
+$g-heading-size-5-desktop: $g-text-size-large-desktop;
+$g-heading-size-6: $g-text-size-default;
+$g-heading-size-6-desktop: $g-text-size-default-desktop;
+
+// Colors ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// // border
+// $g-color-border:;
+// $g-color-border-dimmed:;
+
+// // typography
+// $g-color-text-default:;
+// $g-color-text-dimmed:;
+// $g-color-heading-default:;
+// $g-color-heading-dimmed:;
+
+// // alerts
+// $g-color-danger:;
+// $g-color-warning:;
+// $g-color-success:;
+// $g-color-info:;
+
+// // general palette
+// $g-color-primary:;
+// $g-color-secondary:;
+
+// Size ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$g-size-four: 4rem;
+$g-size-three: 3rem;
+$g-size-two: 2rem;
+$g-size-one-and-half: 1.5rem;
+$g-size-one: 1rem;
+$g-size-three-fourths: .75rem;
+$g-size-half: .5rem;
+$g-size-fourth: .25rem;
+$g-size-eighth: .125rem;
+
+// Margins ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$g-stack-two: $g-size-two 0 0;
+$g-stack-one-and-half: $g-size-one-and-half 0 0;
+$g-stack-one: $g-size-one 0 0;
+$g-stack-half: $g-size-half 0 0;
+
+// Borders ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$g-border-default: 1px solid $g-color-border;
+
+// Shadows ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// $g-shadow-default:;
