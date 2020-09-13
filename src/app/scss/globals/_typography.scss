@@ -1,0 +1,18 @@
+@import "./../utility/mixins/typography";
+
+$g-text-sizes: "extra-small",
+"small",
+"default",
+"large";
+
+@for $i from 1 through 6 {
+    .heading-#{$i} {
+        @include g-heading-size-#{$i};
+    }
+}
+
+@each $size in $g-text-sizes {
+    .text-#{$size} {
+        @include g-text-size-#{$size};
+    }
+}

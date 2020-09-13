@@ -20,6 +20,18 @@ $g-screen-large-desktop-up: 1800px;
 $g-line-height-text: 1.4;
 $g-line-height-heading: 1.2;
 
+// Font weight
+$g-font-weight-bold: 700;
+$g-font-weight-default: 400;
+$g-font-weight-heading: $g-font-weight-bold;
+$g-font-weight-text: $g-font-weight-default;
+
+// Font family
+$g-font-family-text: "Helvetica",
+sans-serif;
+$g-font-family-heading: "Helvetica",
+sans-serif;
+
 // Text
 $g-text-size-large-mobile: calculate-rem(16px);
 $g-text-size-large: calculate-rem(18px);
@@ -28,7 +40,6 @@ $g-text-size-default: $g-px-base;
 $g-text-size-small-mobile: calculate-rem(12px);
 $g-text-size-small: calculate-rem(14px);
 $g-text-size-extra-small: calculate-rem(12px);
-
 
 // Headings
 $g-heading-size-1-mobile: calculate-rem(36px);
@@ -46,25 +57,32 @@ $g-heading-size-6: $g-text-size-default;
 
 // Colors ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-// // border
+// Buttons will be either primary, secondary, or white
+// Only notifications would be danger, info, or critical
+
+
+// // General palette
+// $g-color-primary:;
+// $g-color-secondary:;
+
+// // Border
 // $g-color-border:;
 // $g-color-border-dimmed:;
 
-// // typography
+// // Background 
+// $g-color-background-default:;
+
+// // Typography
 // $g-color-text-default:;
 // $g-color-text-dimmed:;
 // $g-color-heading-default:;
 // $g-color-heading-dimmed:;
 
-// // alerts
+// // Alerts
 // $g-color-danger:;
 // $g-color-warning:;
 // $g-color-success:;
 // $g-color-info:;
-
-// // general palette
-// $g-color-primary:;
-// $g-color-secondary:;
 
 // Size ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $g-size-four: 4rem;

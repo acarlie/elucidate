@@ -1,9 +1,17 @@
 @import './../variables';
 @import './media-queries';
 
-@mixin g-heading-size-1 {
-    font-size: $g-heading-size-1-mobile;
+// Heading styles
+@mixin g-heading-base {
+    font-family: $g-font-family-heading;
+    font-weight: $g-font-weight-heading;
     line-height: $g-line-height-heading;
+}
+
+@mixin g-heading-size-1 {
+    @include g-heading-base;
+
+    font-size: $g-heading-size-1-mobile;
 
     @include for-screen(mobile-landscape-up) {
         font-size: $g-heading-size-1;
@@ -11,8 +19,9 @@
 }
 
 @mixin g-heading-size-2 {
+    @include g-heading-base;
+
     font-size: $g-heading-size-2-mobile;
-    line-height: $g-line-height-heading;
 
     @include for-screen(mobile-landscape-up) {
         font-size: $g-heading-size-2;
@@ -20,8 +29,10 @@
 }
 
 @mixin g-heading-size-3 {
+
+    @include g-heading-base;
+
     font-size: $g-heading-size-3-mobile;
-    line-height: $g-line-height-heading;
 
     @include for-screen(mobile-landscape-up) {
         font-size: $g-heading-size-3;
@@ -29,8 +40,10 @@
 }
 
 @mixin g-heading-size-4 {
+
+    @include g-heading-base;
+
     font-size: $g-heading-size-4-mobile;
-    line-height: $g-line-height-heading;
 
     @include for-screen(mobile-landscape-up) {
         font-size: $g-heading-size-4;
@@ -38,8 +51,9 @@
 }
 
 @mixin g-heading-size-5 {
+    @include g-heading-base;
+
     font-size: $g-heading-size-5-mobile;
-    line-height: $g-line-height-heading;
 
     @include for-screen(mobile-landscape-up) {
         font-size: $g-heading-size-5;
@@ -47,17 +61,27 @@
 }
 
 @mixin g-heading-size-6 {
+    @include g-heading-base;
+
     font-size: $g-heading-size-6-mobile;
-    line-height: $g-line-height-heading;
 
     @include for-screen(mobile-landscape-up) {
         font-size: $g-heading-size-6;
     }
 }
 
-@mixin g-text-size-large {
-    font-size: $g-text-size-large-mobile;
+// Text styles
+@mixin g-text {
+    font-family: $g-font-family-text;
+    font-weight: $g-font-weight-text;
     line-height: $g-line-height-text;
+}
+
+@mixin g-text-size-large {
+    @include g-text;
+
+    font-size: $g-text-size-large-mobile;
+
 
     @include for-screen(mobile-landscape-up) {
         font-size: $g-text-size-large;
@@ -65,8 +89,9 @@
 }
 
 @mixin g-text-size-default {
+    @include g-text;
+
     font-size: $g-text-size-default-mobile;
-    line-height: $g-line-height-text;
 
     @include for-screen(mobile-landscape-up) {
         font-size: $g-text-size-default;
@@ -74,8 +99,9 @@
 }
 
 @mixin g-text-size-small {
+    @include g-text;
+
     font-size: $g-text-size-small-mobile;
-    line-height: $g-line-height-text;
 
     @include for-screen(mobile-landscape-up) {
         font-size: $g-text-size-small;
@@ -83,5 +109,7 @@
 }
 
 @mixin g-text-size-extra-small {
+    @include g-text;
+
     font-size: $g-text-size-extra-small-mobile;
 }
